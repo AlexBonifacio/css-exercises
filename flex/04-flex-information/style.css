@@ -24,3 +24,19 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* adds */
+
+body { 
+  text-align: center;
+}
+
+section {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+section div {
+  flex-basis: 200px;
+}
