@@ -1,10 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
+  padding-left: 16px;;
+  display: flex;
+
+  font-weight: 900;
+  font-size: 32px;
+  align-items: center;
   height: 72px;
   background: darkmagenta;
   color: white;
@@ -26,4 +39,53 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* adds */
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+ /* main */
+
+section {
+  display : flex;
+  flex : 1;
+}
+
+.sidebar {
+  flex-shrink: 1;
+  flex-basis: 300px;
+}
+
+.sidebar ul {
+padding: 16px;
+}
+
+.container {
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  flex-shrink: 10;
+
+
+}
+
+.card {
+  min-width: 200px;
+  padding : 16px;
+  flex-basis: 300px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
